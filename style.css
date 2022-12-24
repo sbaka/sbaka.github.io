@@ -55,7 +55,7 @@ body {
 .bottom>p {
     margin: 10px 0;
     font-size: 14px;
-    color: grey;
+    color: rgb(85, 85, 85);
 }
 
 input,
@@ -77,4 +77,35 @@ button:hover {
     background-color: #333;
     cursor: pointer;
     transition: ease-in-out 0.4s;
+}
+
+@media only screen and (max-width: 1124px) {
+    body {
+        background-image: url("./assets/simple_phone.png");
+    }
+
+    .container {
+        width: 80%;
+        height: 50%;
+    }
+
+    .mainTitle>h1,
+    .top>h1 {
+        font-size: 32px;
+    }
+
+    .get-mail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .get-mail>button {
+        width: fit-content;
+        margin-top: 15px;
+    }
+
+    .top>h2 {
+        font-size: 26;
+    }
 }
